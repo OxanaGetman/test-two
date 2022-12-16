@@ -62,7 +62,7 @@ h2 {
 
 .girl {
     position: absolute;
-    width: 400px;
+    width: 350px;
     z-index: 1;
     right: 650px;
     -webkit-animation: fly 5s linear 0s infinite;
