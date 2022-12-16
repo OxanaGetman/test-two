@@ -156,7 +156,6 @@ h2 {
 @media all and (max-width: 600px) {
     .girl {
         width: 289px;
-        margin-top: 500px;
         margin-left: -110px;
     }
 
