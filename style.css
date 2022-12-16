@@ -1,0 +1,185 @@
+body {
+    background-color: #181818;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    color: #fff;
+    padding: 20px;
+    width: 550px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    padding: 20px;
+    width: 550px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 44px;
+    color: #fff;
+    padding: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 61px;
+    color: #fff;
+    margin-left: 50px;
+    font-weight: bold;
+    width: 700px;
+    font-weight: bold;
+}
+
+.phone {
+    width: 750px;
+}
+
+.oval {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    left: 780px;
+    background-color: rgba(0, 0, 0, 0.264);
+    border-radius: 50%;
+    top: 780px;
+}
+
+.girl {
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+    right: 650px;
+    -webkit-animation: fly 5s linear 0s infinite;
+    -moz-animation: fly 5s linear 0s infinite;
+    -0-animation: fly 5s linear 0s infinite;
+    animation: fly 5s linear 0s infinite;
+}
+
+@-webkit-keyframes fly {
+    0% {
+            top: 5%;
+            left: 37%;
+        }
+
+        75% {
+            top: 1%;
+            left: 37%;
+        }
+
+        100% {
+            top: 5%;
+            left: 37%;
+        }
+    }
+
+    @keyframes fly {
+        0% {
+            top: 5%;
+            left: 37%;
+        }
+        
+        75% {
+            top: 1%;
+            left: 37%;
+        }
+        100% {
+            top: 5%;
+            left: 37%;
+        }
+    }
+
+@media all and (max-width: 1290px) {
+    .oval {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 34px;
+        width: 250px;
+    }
+
+    p {
+        font-size: 16px;
+        width: 250px;
+    }
+
+    h3 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 50px;
+        width: 250px;
+    }
+
+    .say {
+        margin-top: 500px;
+    }
+
+    .girl {
+        width: 289px;
+        margin-top: 500px;
+        margin-left: -50px;
+    }
+
+    .phone {
+        width: 400px;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .girl {
+        width: 289px;
+        margin-top: 500px;
+        margin-left: -110px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .phone {
+        width: 350px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .phone, .girl {
+        width: 250px;
+    }
+
+    h3, h2 {
+        font-size: 35px;
+        width: 200px;
+    }
+}
